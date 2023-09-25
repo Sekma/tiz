@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+/* header */
+header{
+    height: 500px;
+    background-size: cover;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .logo{
+    margin: 20px auto;
+}
+header ul{
+    display: flex;
+    margin-left: auto;
+    gap: 15px;
+    margin: 20px auto;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #22668D;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+header h1, header h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #22668D;
+}
+header h1{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+header button{
+    margin-top: auto;
+    margin-bottom: 50px;
+    width: 150px;
+    height: 40px;
+    font-weight: 600;
+    background-color: #29a5e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+}
