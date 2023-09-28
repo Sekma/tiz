@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-html, body{
+html{
     height: 100%;
 }
 body{
@@ -13,11 +13,17 @@ body{
 }
 /* header */
 header{
-    height: 500px;
+    height: 450px;
     background-size: cover;
     font-size: large;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+header .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 header .logo{
@@ -26,7 +32,7 @@ header .logo{
 header ul{
     display: flex;
     gap: 15px;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 li{
     list-style: none;
@@ -37,6 +43,9 @@ a{
     font-family: sans-serif;
     font-weight: 600;
     font-size: small;
+}
+a:hover{
+    color: white;
 }
 header h1, header h4{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -75,6 +84,7 @@ header button:hover{
 }
 .section1 p, .section2 p, .section3 p, .footerPart1 p{
     text-align: center;
+    margin: 0 auto;
     font-size: small;
     line-height: 25px;
     opacity: 0.7;
@@ -101,7 +111,6 @@ header button:hover{
 }
 .section2 p{
     width: 85%;
-    margin: 0 auto;
 }
 .service h3{
     margin-top: 20px;
@@ -140,6 +149,7 @@ footer .footerPart1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
     gap: 15px;
 }
 .footerPart1 form input{
@@ -155,7 +165,6 @@ footer .footerPart1{
     color: white;
     border: none;
     border-radius: 5px;
-    margin-bottom: 50px;
 }
 .footerPart1 form button:hover{
     cursor: pointer;
@@ -185,4 +194,33 @@ footer span{
     font-size: small;
     opacity: 0.5;
 }
-
+@media (min-width: 767px){
+    .footerPart1 form{
+        flex-direction: row;
+    }
+    header ul{
+        gap: 50px;
+    }
+}
+@media (min-width: 991px){
+    header .navbar{
+        flex-direction: row;
+        width: 100%;
+        gap: 100px;
+    }
+    header h1{
+        margin-top: 30px;
+    }
+    header ul{
+        gap: 25px;
+    }
+    a{
+        color: white;
+    }
+    a:hover{
+        color: #22668D;
+    }
+    .section1 p, .section2 p, .section3 p, .footerPart1 p{
+        width: 60%;
+    }
+}
