@@ -15,6 +15,7 @@ body{
 header{
     height: 450px;
     background-size: cover;
+    background-position: center;
     font-size: large;
     display: flex;
     flex-direction: column;
@@ -110,14 +111,13 @@ header button:hover{
     padding-bottom: 20px;
 }
 .section2 p{
-    width: 85%;
+    width: 80%;
 }
 .service h3{
     margin-top: 20px;
 }
 .service p{
     margin: 30px auto 50px;
-    width: 80% !important; 
 }
 /* section 3 */
 .section3{
@@ -128,10 +128,9 @@ header button:hover{
 .section3 .author{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2px;
     margin: 15px auto 35px;
-}
+    width: 100px;
+} 
 .section3 .line{
     width: 10px;
     height: 1px;
@@ -149,6 +148,7 @@ footer .footerPart1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-bottom: 50px;
     gap: 15px;
 }
@@ -201,6 +201,9 @@ footer span{
     header ul{
         gap: 50px;
     }
+    .section1 p, .section2 p, .saying, .footerPart1 p{
+        width: 60%;
+    }
 }
 @media (min-width: 991px){
     header .navbar{
@@ -220,7 +223,26 @@ footer span{
     a:hover{
         color: #22668D;
     }
-    .section1 p, .section2 p, .section3 p, .footerPart1 p{
+    .section1 p, .section2 p, .footerPart1 p{
         width: 60%;
     }
+    .section1 .gallery{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section1 .gallery div{
+        margin: 10px auto;
+    }
+    .section1 .gallery div:nth-child(1), .section1 .gallery div:nth-child(4){
+        width: 40%;
+    }
+    .section1 .gallery div:nth-child(2), .section1 .gallery div:nth-child(3){
+        width: 56%;
+    }
+    .section2 .service{
+        display: flex;
+        width: 85%;
+        margin: 0 auto;
+    }
+    
 }
