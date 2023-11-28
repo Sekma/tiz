@@ -191,6 +191,7 @@ footer .footerPart2 img:hover{
 }
 footer span{
     color: white;
+    text-align: center;
     font-size: small;
     opacity: 0.5;
 }
