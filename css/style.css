@@ -139,6 +139,8 @@ header button:hover{
 /* footer */
 footer{
     background-color: rgb(245, 245, 245);
+    margin-top: auto;
+    text-align: center;
 }
 footer .footerPart1{
     width: 85%;
@@ -192,8 +194,14 @@ footer .footerPart2 img:hover{
 footer span{
     color: white;
     text-align: center;
-    font-size: small;
+    font-size: x-small;
     opacity: 0.5;
+}
+footer .createur a i{
+    color: #ffffff;
+    font-size: small;
+    margin: 20px 10px;
+    opacity: 0.6;
 }
 @media (min-width: 767px){
     .footerPart1 form{
